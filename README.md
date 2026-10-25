@@ -1,1 +1,9 @@
-# Web-Development-Activity-Based-Learning-1
+# Name: Shaik Nagurbaba
+
+Section: CSM3
+
+Course: B.Tech – Computer Science and Engineering (AI & ML)
+
+Year: 1st Year, Semester 1
+
+College: Dr. RVR NRI DTBU
