@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>
+            Personal Portafolio 
+        </title>
+
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background-color:black;
+                color:white;
+                font-family:Arial, Helvetica, sans-serif
+            }
+            nav{
+                display:flex;
+                padding:15px 10px;
+                border-bottom:2px solid blue;
+            }
+            nav ul{
+                display:flex;
+                gap:40px;
+                margin-left:auto;
+                
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:rgb(145, 145, 234);
+            }
+
+            nav a:hover{
+                border-bottom:2px solid white;
+                padding-bottom: 7px;
+            }
+            #home{
+                padding:30px;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            #home img{
+                width: 800px;
+                height: 700px;
+                object-fit: contain;
+                margin-top:50px;
+                padding-top:30px;
+
+            }
+            #home h1{
+                margin-top:250px;
+                font-size:50px;
+                padding-bottom:20px
+            }
+            #home p{
+                line-height:20px;
+                margin-bottom:30px;
+                
+            }
+            #home span{
+                color:rgb(145, 145, 234);
+            }
+            .btn{
+                padding:13px;
+                border-radius:30px;
+                margin-bottom:150px;
+                background-color:rgb(72, 212, 251);
+                font-weight:bold;
+                color:black;
+                border:3px solid rgb(21, 47, 238);
+                transition:0.3s 
+            }
+            .btn:hover{
+                transform:translateY(-3px)
+            }
+            .heading{
+                text-align: center;
+                color:rgb(11, 11, 11);
+                margin-top:90px;
+                border:3px solid blue;
+                padding:10px;
+                width:200px;
+                justify-self:center;
+                border-radius: 30px;
+                background-color:lightblue;
+            }
+            .box{
+                text-align:justify;
+                padding:30px;
+                border:2px solid white;
+                margin:40px;
+                border-radius:20px;
+                background-color:rgb(55, 52, 52);
+                line-height:25px;
+                width:800px;
+                justify-self: center;
+            }
+
+            .edu,.skill-set,.pro-set,.hob-set{
+                margin:40px;
+                display:flex;
+                gap:50px;
+                justify-content: center;
+            }
+            .card{
+                width:250px;
+                border:3px solid rgb(17, 174, 202);
+                padding:20px;
+                border-radius:20px;
+                background-color: rgb(55, 52, 52);
+                line-height:25px;
+                transition: 0.3s;
+            }
+            .card:hover{
+                border-color:rgb(136, 136, 243);
+                transform: translateY(-5px);
+            }
+            .card h3{
+                color:rgb(72, 212, 251);
+                padding-bottom:10px;
+            }
+            .level{
+                text-align:right;
+                color:#ff0000;
+            }
+            .card button{
+                padding:10px;
+                margin:15px auto auto 22px;
+                border:3px solid rgb(85, 9, 224);
+                background-color:rgb(72, 212, 251);
+                border-radius:30px;
+                font-weight:bold;
+                color:rgb(14, 17, 16);
+            }
+            .card button:hover{
+                border-color:rgb(72, 212, 251);
+            }
+            #achievements+.box ul li{
+                padding-inline:20px;
+                list-style-position:inside;
+            }
+            .box .btn{
+               margin:15px auto auto auto;
+            }
+           
+            #contact-form{
+                display:grid;
+                gap:10px;
+                max-width:480px;
+                text-align:left; 
+                padding-left:18%;           
+            }
+            #contact-form label{
+                font-weight:bold;
+                color:rgb(72, 212, 251);
+            }
+            #contact-form input,
+            #contact-form textarea{
+                width:100%;          
+                padding:10px;
+                border:1px solid rgb(17, 174, 202);
+                border-radius:8px;
+                background-color:black;
+                color:white;
+            }
+            #contact-form input:focus,
+            #contact-form textarea:focus{
+                outline:none;
+                border-color:rgb(136, 136, 243);
+            }
+            #contact-form .btn{
+                margin:15px 0 15px 0;            
+            }
+            footer{
+                color:white;
+                text-align:center;
+                font-weight:bold;
+                background-color:rgb(10, 86, 240);
+                padding:10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav>
+            <h3>My Portfolio</h3>
+            <ul type="none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="home">
+            <section>
+                <h1>Yo,I'm <span>Shaik Nagurbaba</span>👋</h1>
+                <p>First-year B.Tech Computer Science student. I’m learning to code, <br>
+                    building small projects, and getting better every week.</p>
+                <a href="#projects"><button class="btn">View My Projects</button></a> 
+            </section>
+            <section>
+                <img src="Hachiman.png" alt="Student">
+            </section>
+        </div>
+
+        <h2 id="about" class="heading">Profile</h2>
+        <div class="box">
+            I started coding this year and fell in love with turning ideas into working programs. I enjoy solving puzzles, learning new tools. My goal is to become a software developer and build apps that Satisfy Me .
+        </div>
+        
+        <h2 id="education" class="heading">Education</h2>
+        <div class="edu">
+            <section class="card">
+                <p>2026 - Present</p>
+                <h3>B.Tech in Computer Science</h3>
+                <p>Dr.Rvr NRI DTBU . Currenty in Year-1 and Sem-1</p>
+            </section>
+
+            <section class="card">
+                <p>2024 - 2026</p>
+                <h3>Intermediate(MPC)</h3>
+                <p>Sri Srinivasa Graviity Jr. Colleger</p>
+            </section>
+
+            <section class="card">
+                <p>2023</p>
+                <h3>SSC</h3>
+                <p>Navodaya E.M High School</p>
+            </section>
+
+        </div>
+
+
+        <h2 class="heading" id="skills">My Skills</h2>
+        <div class="skill-set">
+
+            <section class="card">
+                <h3>Python</h3>
+                <p>
+                    Learning programming logic, conditions, loops, functions, and problem-solving.
+                </p>
+                <p class="level">- Beginner</p>
+            </section>   
+
+            <section class="card">
+                <h3>HTML</h3>
+                <p>
+                   Building web pages using semantic tags, forms, tables, links, images, and lists.
+                </p>
+                <p class="level">- Beginner</p>
+            </section>
+
+            <section class="card">
+                <h3>CSS</h3>
+                <p>
+                    Styling web pages with colors, typography, borders, spacing, Flexbox layouts, and hover effects.
+                </p>
+                <p class="level">- Beginner</p>
+            </section>
+
+            
+            <section class="card">
+                <h3>Generative AI</h3>
+                <p>Learning prompt engineering, AI tools, LLMs, and how to use AI to solve problems.</p>
+                <p class="level">- Beginner</p>
+            </section>
+
+        </div>
+
+
+        <h2 class="heading" id="hobbies">My Hobbies</h2>
+        <div class="hob-set">
+            <section class="card">
+                <h3>Watching Anime</h3>
+                <p>Enjoy watching anime and exploring different stories and characters. </p>
+            </section>
+
+            <section class="card">
+                <h3>Reaading Manga</h3>
+                <p>Love reading Japanese manga and discovering unique storylines.</p>
+            </section>
+
+            <section class="card">
+                <h3>Reading Manhwa</h3>
+                <p>Enjoy exploring Korean manhwa and webtoon adventures.</p>
+            </section>
+
+            <section class="card">
+                <h3>Listening songs</h3>
+                <p>Enjoy listening to music while coding and during my free time to stay relaxed, focused, and refreshed.</p>
+            </section>
+
+            <section class="card">
+                <h3>Watching Movies</h3>
+                <p>njoy watching movies across different genres and discovering new stories.</p>
+            </section>
+        </div>
+        
+
+        <h2 class="heading" id="projects">Projects</h2>
+        <div class="pro-set">
+            <section class="card">
+                <h3>Festivals.html</h3>
+                <p>A simple and colorful webpage created using HTML and CSS to showcase the rich culture, traditions, and festivals of India.</p>
+                <a href="https://github.com/Shaik-Nagurbaba/Project-Festivals" target="_blank"><button>Click here to see the project</button></a>
+            </section>
+
+            <section class="card">
+                <h3>Family_Tree.html</h3>
+                <p>A simple webpage created using HTML and CSS to represent family relationships in a clear, organized tree structure.</p>
+                <a href="https://github.com/Shaik-Nagurbaba/Project-Family_Tree" target="_blank"><button>Click here to see the project</button></a>
+            </section>
+
+            <section class="card">
+                <h3>AnimeAura.html</h3>
+                <p>A fan-made anime website built with HTML and CSS, showcasing popular anime series through an attractive and organized layout.</p>
+                <a href="https://github.com/Shaik-Nagurbaba/Project-AnimeAura" target="_blank"><button>Click here to see the project</button></a>
+            </section>
+        </div>
+
+        <h2 class="heading" id="achievements">Achievements</h2>
+        <div class="box">
+            <ul>
+                <li>Completed “Web Development Fundamentals” online course (certificate).</li>
+                <li>Scored 95.6% in Intermediate.</li>
+                <li>Participated in my college’s coding Competition.</li>
+                <li>Got second prize in Python Competition Held ny NRI DTBU</li>
+            </ul>
+        </div>
+
+
+         <h2 id="resume" class="heading">Resume</h2>
+         <div class="box">
+            <p><b>Shaik Nagurbaba</b> , B.Tech Year - 1 , Sem - 1</p>
+            <p><b>College : </b>Dr.Rvr NRI DTBU</p>
+            <p><b>Skills : </b>HTML , CSS , Gen.AI , Python</p>
+            <a href="mailto:shaiknagurbaba56@gmail.com"><button class="btn" >Click to Request My Resume</button></a>
+         </div>
+
+        <h2 class="heading" id="contact">Contact</h2>
+        <div class="box">
+            <form id="contact-form" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="7" placeholder="Write your message here" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+        </div>
+
+        <footer>
+            &copy; SHAIK NAGURBABA | CSM3 | 2026
+        </footer>
+    </body>
+</html>
